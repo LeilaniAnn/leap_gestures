@@ -1,0 +1,696 @@
+
+
+Started GET "/playbacks/24" for ::1 at 2016-03-14 18:44:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mPlayback Load (3.4ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 24]]
+  Rendered playbacks/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  [1m[36mPlayback Load (136.9ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (161.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 909ms (Views: 720.3ms | ActiveRecord: 145.2ms)
+
+
+Started GET "/playbacks/24" for ::1 at 2016-03-14 18:47:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mPlayback Load (3.1ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 24]]
+  Rendered playbacks/show.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  [1m[36mPlayback Load (50.0ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (68.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 766ms (Views: 665.5ms | ActiveRecord: 58.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 19:10:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#index as HTML
+  [1m[35mPlayback Load (63.3ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+Redirected to http://localhost:3000/playbacks/2
+Completed 302 Found in 116ms (ActiveRecord: 72.7ms)
+
+
+Started GET "/playbacks/2" for ::1 at 2016-03-14 19:10:45 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlayback Load (3.9ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered playbacks/show.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  [1m[35mPlayback Load (54.7ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (88.4ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 813ms (Views: 731.9ms | ActiveRecord: 58.8ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 19:10:49 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (1.2ms)
+  Rendered playbacks/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  [1m[36mPlayback Load (40.9ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (57.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 227ms (Views: 184.4ms | ActiveRecord: 40.9ms)
+
+
+Started GET "/playbacks/24" for ::1 at 2016-03-14 19:11:26 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mPlayback Load (1.7ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 24]]
+  Rendered playbacks/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  [1m[36mPlayback Load (35.8ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (45.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 162ms (Views: 92.5ms | ActiveRecord: 37.5ms)
+
+
+Started GET "/playbacks/25" for ::1 at 2016-03-14 19:11:27 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mPlayback Load (6.6ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 25]]
+  Rendered playbacks/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  [1m[36mPlayback Load (48.6ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (137.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 356ms (Views: 296.7ms | ActiveRecord: 55.2ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 19:11:51 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.1ms)
+  Rendered playbacks/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  [1m[35mPlayback Load (34.7ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (45.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 123ms (Views: 87.2ms | ActiveRecord: 34.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 19:21:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#index as HTML
+  [1m[35mPlayback Load (49.8ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+Redirected to http://localhost:3000/playbacks/2
+Completed 302 Found in 96ms (ActiveRecord: 57.1ms)
+
+
+Started GET "/playbacks/2" for ::1 at 2016-03-14 19:21:02 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlayback Load (4.2ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered playbacks/show.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  [1m[35mPlayback Load (37.6ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (52.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 778ms (Views: 710.7ms | ActiveRecord: 42.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 19:21:02 -0700
+Processing by PlaybacksController#index as HTML
+  [1m[36mPlayback Load (33.9ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+Redirected to http://localhost:3000/playbacks/2
+Completed 302 Found in 48ms (ActiveRecord: 33.9ms)
+
+
+Started GET "/playbacks/2" for ::1 at 2016-03-14 19:21:02 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPlayback Load (4.4ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered playbacks/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  [1m[36mPlayback Load (38.6ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (50.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 211ms (Views: 164.8ms | ActiveRecord: 43.1ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 19:21:05 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (1.0ms)
+  Rendered playbacks/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  [1m[35mPlayback Load (44.2ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (60.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 222ms (Views: 176.2ms | ActiveRecord: 44.1ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 19:26:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.6ms)
+  Rendered playbacks/new.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  [1m[35mPlayback Load (53.2ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (68.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 780ms (Views: 699.2ms | ActiveRecord: 58.0ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 19:26:35 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (1.2ms)
+  Rendered playbacks/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  [1m[36mPlayback Load (36.8ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (50.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 166ms (Views: 127.9ms | ActiveRecord: 36.8ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 19:26:36 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.0ms)
+  Rendered playbacks/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  [1m[35mPlayback Load (34.5ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (46.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 162ms (Views: 126.3ms | ActiveRecord: 34.5ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 19:29:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (1.0ms)
+  Rendered playbacks/new.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  [1m[35mPlayback Load (115.6ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (135.5ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 1564ms (Views: 1409.6ms | ActiveRecord: 121.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'playbacks'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 20:55:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.7ms)
+  Rendered playbacks/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  [1m[35mPlayback Load (91.3ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (115.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 764ms (Views: 644.1ms | ActiveRecord: 96.2ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 20:55:59 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.7ms)
+  Rendered playbacks/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  [1m[36mPlayback Load (34.0ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (46.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 164ms (Views: 128.1ms | ActiveRecord: 34.0ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 20:57:46 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.1ms)
+  Rendered playbacks/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (37.0ms)
+  [1m[35mPlayback Load (75.5ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (96.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 331ms (Views: 253.9ms | ActiveRecord: 75.5ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:01:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mPlayback Load (4.2ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  [1m[36mPlayback Load (70.5ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (88.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 793ms (Views: 662.6ms | ActiveRecord: 79.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 23:17:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#index as HTML
+  [1m[35mPlayback Load (57.1ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+Redirected to http://localhost:3000/playbacks/26
+Completed 302 Found in 135ms (ActiveRecord: 63.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 23:17:37 -0700
+Processing by PlaybacksController#index as HTML
+  [1m[36mPlayback Load (48.6ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+Redirected to http://localhost:3000/playbacks/26
+Completed 302 Found in 82ms (ActiveRecord: 48.6ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:17:37 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mPlayback Load (2.7ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  [1m[36mPlayback Load (57.5ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (74.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1838ms (Views: 1759.2ms | ActiveRecord: 60.5ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 23:18:10 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.8ms)
+  Rendered playbacks/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  [1m[35mPlayback Load (55.2ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (67.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 200ms (Views: 143.2ms | ActiveRecord: 55.2ms)
+
+
+Started GET "/playbacks/22" for ::1 at 2016-03-14 23:18:22 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mPlayback Load (4.0ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  Rendered playbacks/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  [1m[35mPlayback Load (42.3ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (52.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 200ms (Views: 149.4ms | ActiveRecord: 46.3ms)
+
+
+Started GET "/playbacks/23" for ::1 at 2016-03-14 23:18:23 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mPlayback Load (5.0ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  Rendered playbacks/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  [1m[35mPlayback Load (47.1ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (65.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 223ms (Views: 164.7ms | ActiveRecord: 52.0ms)
+
+
+Started GET "/playbacks/24" for ::1 at 2016-03-14 23:18:25 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mPlayback Load (1.6ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  Rendered playbacks/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  [1m[35mPlayback Load (62.6ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (117.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 239ms (Views: 169.3ms | ActiveRecord: 64.2ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:18:27 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlayback Load (2.2ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  [1m[35mPlayback Load (60.9ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (73.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 197ms (Views: 131.5ms | ActiveRecord: 63.1ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:18:36 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlayback Load (2.6ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  [1m[35mPlayback Load (43.8ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (69.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 155ms (Views: 104.6ms | ActiveRecord: 46.3ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:20:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mPlayback Load (3.9ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  [1m[36mPlayback Load (64.5ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (130.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 991ms (Views: 876.0ms | ActiveRecord: 74.4ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:21:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mPlayback Load (3.8ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  [1m[36mPlayback Load (53.4ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (68.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 862ms (Views: 756.2ms | ActiveRecord: 63.8ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 23:21:43 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (1.1ms)
+  Rendered playbacks/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  [1m[35mPlayback Load (46.7ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (78.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 230ms (Views: 181.9ms | ActiveRecord: 46.7ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 23:22:36 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.8ms)
+  Rendered playbacks/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  [1m[36mPlayback Load (35.5ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (49.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 133ms (Views: 96.6ms | ActiveRecord: 35.5ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 23:22:43 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.9ms)
+  Rendered playbacks/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  [1m[35mPlayback Load (32.0ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (69.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 171ms (Views: 137.8ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:22:44 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlayback Load (2.6ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  [1m[35mPlayback Load (35.6ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (45.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 128ms (Views: 87.4ms | ActiveRecord: 38.1ms)
+
+
+Started GET "/playbacks/2" for ::1 at 2016-03-14 23:22:52 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlayback Load (4.1ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered playbacks/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  [1m[35mPlayback Load (37.0ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (58.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 142ms (Views: 96.2ms | ActiveRecord: 41.2ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:22:56 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlayback Load (2.2ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  [1m[35mPlayback Load (38.7ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (50.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 90.6ms | ActiveRecord: 40.9ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 23:23:11 -0700
+Processing by PlaybacksController#index as HTML
+  [1m[36mPlayback Load (43.8ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+Redirected to http://localhost:3000/playbacks/26
+Completed 302 Found in 54ms (ActiveRecord: 43.8ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:23:11 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mPlayback Load (2.2ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  [1m[36mPlayback Load (49.2ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (59.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 154ms (Views: 100.9ms | ActiveRecord: 51.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 23:24:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#index as HTML
+  [1m[35mPlayback Load (87.6ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+Redirected to http://localhost:3000/playbacks/26
+Completed 302 Found in 136ms (ActiveRecord: 95.8ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 23:24:03 -0700
+Processing by PlaybacksController#index as HTML
+  [1m[36mPlayback Load (42.5ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+Redirected to http://localhost:3000/playbacks/26
+Completed 302 Found in 66ms (ActiveRecord: 42.5ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:24:03 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mPlayback Load (2.3ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  [1m[36mPlayback Load (38.1ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (51.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 632ms (Views: 573.4ms | ActiveRecord: 40.6ms)
+
+
+Started GET "/playbacks/2" for ::1 at 2016-03-14 23:24:11 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPlayback Load (8.4ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered playbacks/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  [1m[36mPlayback Load (56.4ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (75.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 266ms (Views: 196.9ms | ActiveRecord: 64.8ms)
+
+
+Started GET "/playbacks/25" for ::1 at 2016-03-14 23:24:13 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mPlayback Load (6.9ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 25]]
+  Rendered playbacks/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  [1m[36mPlayback Load (73.6ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (94.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 319ms (Views: 231.0ms | ActiveRecord: 80.6ms)
+
+
+Started GET "/playbacks/24" for ::1 at 2016-03-14 23:24:14 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mPlayback Load (1.8ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 24]]
+  Rendered playbacks/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  [1m[36mPlayback Load (50.9ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (65.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 278ms (Views: 223.2ms | ActiveRecord: 52.7ms)
+
+
+Started GET "/playbacks/23" for ::1 at 2016-03-14 23:24:16 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mPlayback Load (7.2ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 23]]
+  Rendered playbacks/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  [1m[36mPlayback Load (68.9ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (87.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 364ms (Views: 283.3ms | ActiveRecord: 76.1ms)
+
+
+Started GET "/playbacks/22" for ::1 at 2016-03-14 23:24:18 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mPlayback Load (8.3ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 22]]
+  Rendered playbacks/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  [1m[36mPlayback Load (69.4ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (83.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 395ms (Views: 312.8ms | ActiveRecord: 77.7ms)
+
+
+Started GET "/playbacks/22" for ::1 at 2016-03-14 23:25:00 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mPlayback Load (4.5ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 22]]
+  Rendered playbacks/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  [1m[36mPlayback Load (60.0ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (71.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 207ms (Views: 140.3ms | ActiveRecord: 64.5ms)
+
+
+Started GET "/playbacks/22" for ::1 at 2016-03-14 23:25:25 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mPlayback Load (3.5ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 22]]
+  Rendered playbacks/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  [1m[36mPlayback Load (51.0ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (62.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 152ms (Views: 93.8ms | ActiveRecord: 54.5ms)
+
+
+Started GET "/playbacks/22" for ::1 at 2016-03-14 23:25:37 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mPlayback Load (3.5ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 22]]
+  Rendered playbacks/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  [1m[36mPlayback Load (56.7ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (67.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 182ms (Views: 117.6ms | ActiveRecord: 60.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-14 23:26:01 -0700
+Processing by PlaybacksController#index as HTML
+  [1m[35mPlayback Load (34.2ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+Redirected to http://localhost:3000/playbacks/26
+Completed 302 Found in 43ms (ActiveRecord: 34.2ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:26:01 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlayback Load (1.8ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  [1m[35mPlayback Load (35.7ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (46.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 124ms (Views: 84.9ms | ActiveRecord: 37.5ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 23:26:03 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.8ms)
+  Rendered playbacks/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  [1m[36mPlayback Load (54.1ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (70.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 187ms (Views: 131.5ms | ActiveRecord: 54.1ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 23:26:17 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.5ms)
+  Rendered playbacks/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  [1m[35mPlayback Load (35.1ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (45.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 152ms (Views: 116.3ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 23:26:33 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.8ms)
+  Rendered playbacks/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  [1m[36mPlayback Load (36.7ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (47.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 155ms (Views: 117.4ms | ActiveRecord: 36.7ms)
+
+
+Started GET "/playbacks/new" for ::1 at 2016-03-14 23:27:23 -0700
+Processing by PlaybacksController#new as HTML
+  Rendered playbacks/_form.html.erb (0.7ms)
+  Rendered playbacks/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  [1m[35mPlayback Load (35.9ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (47.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 97.1ms | ActiveRecord: 35.9ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:27:25 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlayback Load (2.4ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  [1m[35mPlayback Load (40.7ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (52.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 150ms (Views: 104.1ms | ActiveRecord: 43.1ms)
+
+
+Started GET "/playbacks/2" for ::1 at 2016-03-14 23:27:30 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlayback Load (6.0ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered playbacks/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  [1m[35mPlayback Load (40.9ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (54.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 165ms (Views: 110.7ms | ActiveRecord: 46.9ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:27:35 -0700
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlayback Load (1.9ms)[0m  [1mSELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  [1m[35mPlayback Load (34.3ms)[0m  SELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc
+  Rendered layouts/_sidebar.html.erb (45.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 134ms (Views: 95.6ms | ActiveRecord: 36.3ms)
+
+
+Started GET "/playbacks/26" for ::1 at 2016-03-14 23:31:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlaybacksController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mPlayback Load (2.8ms)[0m  SELECT  "playbacks".* FROM "playbacks" WHERE "playbacks"."id" = $1 LIMIT 1  [["id", 26]]
+  Rendered playbacks/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  [1m[36mPlayback Load (76.6ms)[0m  [1mSELECT "playbacks".* FROM "playbacks"  ORDER BY updated_at desc[0m
+  Rendered layouts/_sidebar.html.erb (103.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 842ms (Views: 722.8ms | ActiveRecord: 86.1ms)

@@ -1,0 +1,37 @@
+<%= render "form" %>
+
+<script>
+	if ($("#playback_name").val !== "") {
+	      $("#saveBtn").removeAttr("disabled");
+	}
+	  	
+	$('#myWizard').on('finished.fu.wizard', function (evt, data) {
+	  		if (player().recording) {
+	  			$('#myPleaseWait').modal('show');
+	  			playback_data = player().recording.export("lz") 
+	  			$.ajax({
+					  dataType: 'json',
+					  method: "PUT",
+					  url: "/playbacks/<%= @playback.id %>",
+					  data: {playback: { name: $("#playback_name").val(), data: playback_data } }
+					}).done(function( msg ) {
+					    $('#myPleaseWait').modal('hide');
+					    window.location.href = "/playbacks";
+					}).fail(function(msg) {
+						str = "<ul><h2>Save failed</h2>"
+						for (name in msg.responseJSON) {
+							str += "<li>" + name + ' ' + msg.responseJSON[name] + "</li>"
+						}
+						str += "</ul>"
+						$("#errors").html(str);
+						$("#errors").css("display","block");
+						$('#myPleaseWait').modal('hide');
+					});
+	  		} else {
+	  			alert("Please record the playback.");
+	  		}
+			
+	});
+
+
+</script>

@@ -1,0 +1,88 @@
+@import "bootstrap";
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+.navbar{
+  height:60px;
+
+}
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    top:45px;
+    height:100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+}
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.progress {
+  background-color: #aaa;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*
+ * Main content
+ */
+
+.main .content-header {
+  text-align: center;
+  vertical-align:top;
+}
+
+.main .content-header h1 {
+  text-transform: uppercase;
+}
+
+#leap-canvas {
+  position:relative; 
+  margin: 0 0;
+  height:500px; 
+}
+.list-group-item active{
+
+ background-color: #c6de9c; 
+}
+.btn {
+    background-color: #000; 
+    border: none;
+    color: #c6de9c;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+a:hover{
+  color: #cea;
+}

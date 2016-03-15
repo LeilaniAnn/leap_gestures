@@ -1,0 +1,8 @@
+        <div class="col-md-2 sidebar">
+          <h4 class="text-center">Collection of Gestures</h4>
+          <div class="list-group">
+            <% @playbacks.each do |playback| %>
+                <% classname = (@playback == playback) ? "list-group-item active" : "list-group-item" %>
+                <%= link_to playback.name, playback, id: "#{playback.name}", class: classname  %>
+            <% end %>
+          </div>

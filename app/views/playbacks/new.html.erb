@@ -1,0 +1,38 @@
+<div class="container">
+        <% if @playback.name %>
+        <h1>Edit the gesture</h1>
+      <% else %>
+        <h1>Create a new gesture</h1>
+      <% end %>
+      <hr/>
+ 
+<%= render "playbacks/form" %>
+
+<script>
+  	$('#myWizard').on('finished.fu.wizard', function (evt, data) {
+  		if (player().recording) {
+	  		$('#uploading').modal('show');
+	  		playback_data = player().recording.export("lz")
+			$.ajax({
+			  method: "POST",
+			  dataType: 'json',
+			  url: "/playbacks",
+			  data: {playback: { name: $("#playback_name").val(), data: playback_data } }
+			}).done(function( msg ) {
+			    $('#uploading').modal('hide');
+			    window.location.href = "/playbacks";
+			}).fail(function(msg) {
+				str = "<ul><h2>Save failed</h2>"
+				for (name in msg.responseJSON) {
+					str += "<li>" + name + ' ' + msg.responseJSON[name] + "</li>"
+				}
+				str += "</ul>"
+				$("#errors").html(str);
+				$("#errors").css("display","block");
+				$('#uploading').modal('hide');
+			});
+		} else {
+  			alert("Please record the playback.");
+  		}
+	});
+</script>

@@ -1,0 +1,9 @@
+I"¢(function() {
+  (function() {
+    window.player = function() {
+      return window.controller.plugins['playback'].player;
+    };
+  }).call(this);
+
+}).call(this);
+:ET
