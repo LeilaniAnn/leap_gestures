@@ -1,3 +1,8 @@
 == README
 
-Rake db:seed
+> >  Rake db:seed
+
+In the process of deploying to heroku. I am having issues with my JavaScript files being called correctly; need to check the order in which they are being called.
+
+CSS files seem to be working just fine.
+
