@@ -1,5 +1,5 @@
 
-  ## Leap Playback
+# Leap Playback
 
 Leap Playback is a coding challenge done for Leap Motion©. Users may create and view uploaded gestures. Requires Leap Motion© device. Created by [Leilani Raranga](https://github.com/Leilaniann) for [Leap Motion©](http://leapmotion.com) Coding Challenge.
 
